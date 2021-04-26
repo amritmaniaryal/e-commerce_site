@@ -1,0 +1,166 @@
+/*.sm-sidebar-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); !* Fallback color *!
+    background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!
+}*/
+.smsidebar-menu {
+    background: #F7F7F7;
+    position: fixed;
+    z-index: 10001;
+    top: -1px;
+    left: 0;
+    width: 260px;
+    height: 101%;
+    overflow-y: scroll;
+    -webkit-transition: width .4s linear;
+    transition: width .4s linear;
+    -webkit-transform: translateZ(0) scale(1,1);
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    opacity: 1;
+}
+.smsidebar-menu.rightActive{
+    width: 0;
+    transform: translateX(-140px);
+}
+
+
+/*Main Sidebar CSS*/
+.main-sidebar-menu {
+    padding: 0 10px;
+}
+.main-sidebar-menu .sidebar-menu ul li.sidebar-dropdown a.active.main-cat, .main-sidebar-menu .sidebar-menu ul li.sidebar-dropdown:hover a.main-cat  {
+    /*background-color: #CF7500;*/
+    background-color: #94943a;
+    color: #fff;
+    border-radius: 10px;
+}
+.main-sidebar-menu .sidebar-submenu ul li a.active.main-subcat, .main-sidebar-menu .sidebar-submenu ul li a:hover{
+    background-color: #d1cdcc;
+}
+.main-sidebar-menu .sidebar-menu ul li a {
+    padding: 2px 30px 2px 20px;
+}
+.main-sidebar-menu .sidebar-menu li.sidebar-dropdown > a i{
+    padding: 0 10px;
+}
+.main-sidebar-menu .sidebar-menu li.sidebar-dropdown {
+    padding: 5px 0 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+.main-sidebar-menu .sidebar-submenu ul li {
+    padding-bottom: 5px;
+}
+.main-sidebar-menu .sidebar-submenu ul li a {
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+/*----------------sidebar-wrapper----------------*/
+
+
+.smsidebar-menu ul, .main-sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smsidebar-menu a, .main-sidebar-menu a {
+    text-decoration: none;
+}
+
+li.sidebar-dropdown {
+    border-bottom: 1px solid #F0A50030;
+}
+.smsidebar-menu .sidebar-menu ul li a, .main-sidebar-menu .sidebar-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #000b16;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+.smsidebar-menu .sidebar-menu ul li a{
+    padding: 8px 30px 8px 20px;
+}
+.smsidebar-menu .sidebar-submenu ul li a, .main-sidebar-menu .sidebar-submenu ul li a {
+    padding: 2px 10px 2px 10px;
+}
+.smsidebar-menu .sidebar-submenu ul li a i{
+    /*color: #cf5f02;*/
+    color: #94943a;
+}
+
+
+.smsidebar-menu .sidebar-menu ul li a i {
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.smsidebar-menu .sidebar-menu li.sidebar-dropdown > a i, .main-sidebar-menu .sidebar-menu li.sidebar-dropdown > a i{
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+
+/*.smsidebar-menu .sidebar-menu .sidebar-dropdown > a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    font-style: normal;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: 0 0;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}*/
+
+.smsidebar-menu .sidebar-menu .sidebar-dropdown .sidebar-submenu ul, .main-sidebar-menu .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
+    padding: 5px 0;
+}
+
+.smsidebar-menu .sidebar-menu .sidebar-dropdown .sidebar-submenu li, .main-sidebar-menu .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
+    padding-left: 25px;
+    font-size: 13px;
+}
+
+.smsidebar-menu .sidebar-menu .sidebar-submenu, .main-sidebar-menu .sidebar-menu .sidebar-submenu {
+    display: none;
+}
+
+.smsidebar-menu .sidebar-menu .sidebar-dropdown.active > a i, .main-sidebar-menu .sidebar-menu .sidebar-dropdown.active > a i {
+    transform: rotate(90deg);
+    right: 0;
+}
+
+/*Sm-sidebar Css Media Query*/
+@media screen and (max-width: 992px) {
+    .main-sidebar-menu-wrapper{
+        display: none;
+    }
+    .smsidebar-menu.sidebar-wrapper{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-sidebar-menu-wrapper{
+        display: block;
+    }
+    .smsidebar-menu.sidebar-wrapper, #toggle-smsidebar{
+        display: none !important;
+    }
+}
