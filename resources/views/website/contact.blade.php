@@ -67,9 +67,7 @@
                                 <div class="col-md-9 text-center">
                                     <h4 class="font-weight-bold pb-3">LOCATION</h4>
                                     <address>
-                                        <a href="https://www.google.com/maps/place/Softtech+Multimedia+Pvt.+Ltd.+Chitwan/@27.6875094,84.4318738,17z/data=!3m1!4b1!4m5!3m4!1s0x3994fb0a4785686d:0xd7ed579bd57a1450!8m2!3d27.6875094!4d84.4340678" target="_blank">
-                                           {{$Details->address}}
-                                        </a>
+                                        Patan Multiple Campus
                                     </address>
                                     {{--<h6>365 MURRAY ROAD, PRESTON</h6>
                                     <h6>VIC 3072</h6>--}}

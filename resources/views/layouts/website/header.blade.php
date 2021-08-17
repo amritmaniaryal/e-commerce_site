@@ -277,20 +277,12 @@
                                                 href="tel:{{$websiteDetail[0]->contact_number}}">{{$websiteDetail[0]->contact_number}}</a>
                                         </li>
                                         <li class="list">
-                                            <a
+                                            <aclear
                                                 href="tel:{{$websiteDetail[0]->optional_contact}}">{{$websiteDetail[0]->optional_contact}}</a>
                                         </li>
                                         <li class="list">
                                             <a
                                                 href="mailto:{{$websiteDetail[0]->email}}">{{$websiteDetail[0]->email}}</a>
-                                        </li>
-                                        <li class="list">
-                                            <address>
-                                                <a href="https://www.google.com/maps/place/Softtech+Multimedia+Pvt.+Ltd.+Chitwan/@27.6875094,84.4318738,17z/data=!3m1!4b1!4m5!3m4!1s0x3994fb0a4785686d:0xd7ed579bd57a1450!8m2!3d27.6875094!4d84.4340678"
-                                                    target="_blank">
-                                                    {{$websiteDetail[0]->address}}
-                                                </a>
-                                            </address>
                                         </li>
                                         @endif
                                     </ul>
@@ -301,29 +293,6 @@
                 </div>
 
 
-                <hr class="style7">
-
-
-                <div class="container">
-                    <div class="col-md-12">
-                        <h2 class="text-center heading-font">OUR DELIVERY
-                            SERVICES:</h2>
-                        <p class="text-center">
-                            3020 Albion | 3020 Sunshine | 3020 Sunshine North | 3020 Sunshine West | 3021 Albanvale |
-                            3021
-                            Kealba |
-                            3021 Kings Park | 3021 St Albans | 3022 Ardeer | 3023 Burnside | 3023 Burnside Heights |
-                            3023
-                            Cairnlea |
-                            3023 Caroline Springs | 3023 Deer Park | 3033 Keilor East | 3036 Keilor | 3036 Keilor North
-                            | 3037
-                            Delahey | 3037 Sydenham | 3037 Taylors Hill | 3038 Keilor Downs | 3038 Keilor Lodge | 3038
-                            Taylors
-                            Lakes
-                            | 3042 Airport West | 3042 Keilor Park | 3042 Niddri
-                        </p>
-                    </div>
-                </div>
 
 
                 <hr class="style7">
@@ -337,8 +306,7 @@
                 <div class="container-fluid">
                     <div class="row pt-2" id="copyright-footer">
                         <div class="left">
-                            <p> &copy; Copyright 2020. All rights reserved. Designed by <a href="#"> Soft-Tech
-                                    Multimedia.</a>
+                            <p> &copy; Copyright 2020. All rights reserved. Designed by Amritmani, Himal, Abhi &amp; Prakash</a>
                             </p>
                         </div>
                         <div class="right">

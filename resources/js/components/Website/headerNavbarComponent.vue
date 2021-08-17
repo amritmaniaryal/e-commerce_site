@@ -70,8 +70,8 @@
                             <a class="nav-link text-dark" href="/contact">Contact Us</a>
                         </li>
                     </ul>
-                    <div class="nav-right container-mine lg-user-checkout">
-                        <a href="#" class="user" id="droptrigger">
+                    <div class="nav-right container-mine lg-user-checkout" style="display:flex;gap:15px;>
+                        <div><a href="#" class="user" id="droptrigger">
                             <svg width="1.7em" height="1.7em" viewBox="0 0 16 16"
                                  class="bi bi-person-bounding-box text-white mr-2 mt-1" fill="currentColor"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                                 <path fill-rule="evenodd"
                                       d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                             </svg>
-                        </a>
+                        </a></div>
                         <div class="dropcontent">
                             <ul class="list-group text-center" v-if="userDetail.role_id === 2">
                                 <li class="list-group-item"><a href="/user/userdashboard">My
@@ -98,6 +98,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <div>
                         <a href="#" class="cart" data-toggle="modal" @click="openModal()" data-target="#cartModal">
                             <svg width="2em" height="2em" viewBox="0 0 16 16"
                                  class="bi bi-cart4 text-white ml-2" fill="currentColor"
@@ -108,7 +109,7 @@
                             <div class="cart-count rounded bg-main-secondary text-white">
                                 {{ $store.state.cartCount }}
                             </div>
-                        </a>
+                        </a></div>
                     </div>
                 </div>
             </nav>

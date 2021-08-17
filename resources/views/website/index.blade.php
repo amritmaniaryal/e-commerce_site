@@ -57,7 +57,7 @@
             <!-- sidebar slider section ends here -->
             <div class="col-lg-12 col-md-12">
                 <!-- banner section starts here -->
-                <div class="banner-area">
+                <div class="banner-areÏa">
                     <div id="banner-image-carousel" class="owl-carousel owl-theme">
                         @foreach($bannerImage as $images)
                         <div class="item"><img src="{{ $images->image }}" alt=""></div>
@@ -75,6 +75,7 @@
 
 
 <!-- clearence section starts here -->
+@if(count($clearanceProducts)>0)
 <section id="clearence_section" class="container">
     <div class="row  mt-5 mx-0">
         <div class="col-md-12">
@@ -82,14 +83,14 @@
                 <div class="card-header ">
                     <!-- <h2 class="text-center  heading-font mb-0" style="color:#d47a19">FLASH DEALS</h2> -->
                     <div class="row  mt-5 mb-4">
-            <div class="col-md-12">
-                <div class="top-title">
-                    <h3 class="d-inline bg-main-primary px-3 rounded-top-front heading-font text-white">
-                        Flash Deals
-                    </h3>
-                </div>
-            </div>
-        </div>
+                        <div class="col-md-12">
+                            <div class="top-title">
+                                <h3 class="d-inline bg-main-primary px-3 rounded-top-front heading-font text-white">
+                                    Flash Deals
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-body  rounded-bottom-front card-bdy ">
@@ -142,6 +143,7 @@
         </div>
     </div>
 </section>
+@endif
 <!-- clearence section ends here -->
 
 <div class="new_arrival_section1">
